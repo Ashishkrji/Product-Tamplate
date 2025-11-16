@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Follower</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="min-h-screen bg-background text-foreground flex flex-col items-center justify-center p-4">
+        <div class="max-w-lg w-full bg-card p-6 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold mb-4 text-center">Boost Your Instagram Followers</h1>
+            <p class="text-muted-foreground mb-6 text-center">Unlock exclusive services by following us on Instagram!
+            </p>
+            <div class="flex justify-center mb-6">
+                <img src="Images/ashish.png" alt="Instagram Profile Picture"
+                    class="rounded-full border-4 border-primary" />
+            </div>
+            <div>
+                <h2 class="text-2xl w-fullpy-2" style="margin-left: 160px; margin-bottom: 5px;">Ashish Kumar</h2>
+            </div>
+            <button id="followButton"
+                class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                Follow Us on Instagram
+            </button>
+            <div id="services" class="mt-6 hidden">
+                <h2 class="text-xl font-semibold mb-4 text-center">Our Exclusive Services</h2>
+                <ul class="list-disc list-inside text-center">
+                    <li class="mb-2">Service 1: Detailed Description</li>
+                    <li class="mb-2">Service 2: Detailed Description</li>
+                    <li class="mb-2">Service 3: Detailed Description</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('followButton').addEventListener('click', function () {
+            // Open Instagram in a new tab
+            window.open('https://www.instagram.com/fluxon_webdev/', '_blank');
+
+            // Simulate the follow action
+            alert('Thank you for following us on Instagram!');
+
+            // Show the services section
+            document.getElementById('services').classList.remove('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

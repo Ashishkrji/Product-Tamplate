@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <script>
+        // Tailwind CSS Configuration
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: 'hsl(142.1, 76.2%, 36.3%)',
+                            foreground: 'hsl(355.7, 100%, 97.3%)'
+                        },
+                        card: {
+                            DEFAULT: 'hsl(0, 0%, 100%)',
+                            foreground: 'hsl(240, 10%, 3.9%)'
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(240, 4.8%, 95.9%)',
+                            foreground: 'hsl(240, 3.8%, 46.1%)'
+                        },
+                        background: 'hsl(0, 0%, 100%)',
+                        foreground: 'hsl(240, 10%, 3.9%)',
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 142.1 76.2% 36.3%;
+--primary-foreground: 355.7 100% 97.3%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 142.1 76.2% 36.3%;
+				}
+				.dark {
+					--background: 20 14.3% 4.1%;
+--foreground: 0 0% 95%;
+--popover: 0 0% 9%;
+--popover-foreground: 0 0% 95%;
+--card: 24 9.8% 10%;
+--card-foreground: 0 0% 95%;
+--primary: 142.1 70.6% 45.3%;
+--primary-foreground: 144.9 80.4% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 0 0% 15%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 12 6.5% 15.1%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 85.7% 97.3%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 142.4 71.8% 29.2%;
+				}
+			}
+    </style>
+
+    <style>
+        img.rounded {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+        }
+
+        button {
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: hsl(142.1, 76.2%, 36.3%);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            display: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .scroll-to-top.visible {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="min-h-screen bg-background text-foreground">
+        <div class="container mx-auto p-6">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold">High Converting Digital Product Selling Website Template</h1>
+                <p class=" text-muted-foreground mt-4">Are you ready to launch your online store effortlessly? Our high
+                    converting digital product selling website template offers everything you need to start selling
+                    digital products quickly and effectively. Whether you’re selling eBooks, software, courses, or
+                    digital downloads, our template is designed to maximize your sales with minimal setup.</p>
+            </header>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1">
+                    <img src="Images/Digital-Products-Hub-1.png" alt="Product Image"
+                        class="w-full rounded-lg shadow-lg">
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-2xl font-semibold mb-4">Product Features</h2>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>🛒 Easy Checkout: Streamlined checkout process for seamless customer transactions.</li>
+                        <li>🛍️ Easy Cart: Simplified shopping cart management for a hassle-free experience.</li>
+                        <li>🚀 Fast Loading & SEO Friendly: Optimal performance ensures quick loading times and enhanced
+                            SEO visibility.</li>
+                        <li>💬 WhatsApp Chat: Instant customer support integration via WhatsApp for direct
+                            communication.</li>
+                    </ul>
+                    <div class="mt-6">
+                        <span class="text-3xl font-bold text-primary">₹ 999.00</span>
+                        <a href="https://pdf.ashishkrj.com/product/high-converting-digital-product-selling-website-template/"
+                            rel="noopener noreferrer">
+                            <button
+                                class="bg-primary text-primary-foreground hover:bg-primary/80 mt-4 px-6 py-2 rounded-lg">
+                                Buy Now </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mt-12">
+                <h2 class="text-2xl font-semibold mb-4 text-center">Customer Reviews</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-card p-4 rounded-lg shadow-md">
+                        <p class="text-muted-foreground">"I was amazed at how user-friendly and sleek this template is.
+                            It helped me set up my digital product store in just a few hours! The design is modern,
+                            responsive, and perfect for driving sales. Highly recommend it!"</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <span class="block mt-2 font-bold">- "Impressive and Easy to Use!" John D.</span>
+                    </div>
+                    <div class="bg-card p-4 rounded-lg shadow-md">
+                        <p class="text-muted-foreground">"After switching to this template, my sales improved by 40%!
+                            The features like quick checkout, product showcase, and mobile compatibility are top-notch.
+                            Great value for money."</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <span class="block mt-2 font-bold">- "Boosted My Sales Instantly!" Priya S.</span>
+                    </div>
+                    <div class="bg-card p-4 rounded-lg shadow-md">
+                        <p class="text-muted-foreground">"The template is fantastic, but it took me a little time to
+                            figure out all the features. Once I got the hang of it, it was a game-changer for my
+                            business."</p>
+                        <p>⭐⭐⭐⭐☆</p>
+                        <span class="block mt-2 font-bold">- "Great Design, Slight Learning Curve" Anita R.</span>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="mt-12 text-center">
+                <p class="text-muted-foreground">Follow us on Instagram for more updates!</p>
+                <a href="https://www.instagram.com/fluxon_webdev/" class="text-primary hover:underline">Instagram
+                    Profile</a>
+            </footer>
+        </div>
+    </div>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        // Scroll to Top Button
+        const scrollToTop = document.getElementById('scrollToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTop.classList.add('visible');
+            } else {
+                scrollToTop.classList.remove('visible');
+            }
+        });
+        scrollToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
